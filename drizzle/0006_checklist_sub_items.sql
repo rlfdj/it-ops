@@ -1,0 +1,3 @@
+ALTER TABLE "checklist_items" ADD COLUMN "parent_id" uuid;--> statement-breakpoint
+ALTER TABLE "checklist_items" ADD CONSTRAINT "checklist_items_parent_id_checklist_items_id_fk" FOREIGN KEY ("parent_id") REFERENCES "public"."checklist_items"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
+CREATE INDEX "checklist_items_parent_id_index" ON "checklist_items" USING btree ("parent_id");

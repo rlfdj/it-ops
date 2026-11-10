@@ -1,0 +1,2 @@
+ALTER TABLE "subscriptions" ADD COLUMN "notice_days" integer;--> statement-breakpoint
+ALTER TABLE "subscriptions" ADD CONSTRAINT "subscriptions_notice_days_range" CHECK ("subscriptions"."notice_days" is null or "subscriptions"."notice_days" between 0 and 3650);

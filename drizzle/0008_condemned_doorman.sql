@@ -1,0 +1,1 @@
+ALTER TABLE "subscriptions" ADD COLUMN "assigned_to" text;
