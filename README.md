@@ -14,6 +14,8 @@ Sign-in is by magic link and is restricted to one address, `ALLOWED_EMAIL`.
 
 ## Setup
 
+New here? Follow the step-by-step guide in [docs/SETUP.md](docs/SETUP.md): Supabase, Vercel and installing it as an app.
+
 Requirements: Node 22+ and pnpm 10+.
 
 1. Create a Supabase project. Under Project Settings, copy the Postgres connection string (use the **session pooler**, port 5432), the project URL, the publishable key and the secret key.
